@@ -390,6 +390,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Menu1";
             this.Size = new System.Drawing.Size(1024, 600);
+            this.Load += new System.EventHandler(this.Menu1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

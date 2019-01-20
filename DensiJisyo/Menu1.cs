@@ -243,5 +243,10 @@ namespace DensiJisyo
         {
             Changerabbit(8);
         }
+
+        private void Menu1_Load(object sender, EventArgs e)
+        {
+            Changerabbit(1);
+        }
     }
 }
