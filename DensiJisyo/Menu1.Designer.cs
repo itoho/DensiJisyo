@@ -181,6 +181,7 @@
             this.contents1.Size = new System.Drawing.Size(200, 200);
             this.contents1.TabIndex = 9;
             this.contents1.UseVisualStyleBackColor = false;
+            this.contents1.Click += new System.EventHandler(this.contents1_Click);
             // 
             // contents2
             // 

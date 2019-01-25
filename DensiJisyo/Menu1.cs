@@ -204,6 +204,8 @@ namespace DensiJisyo
 
         }
 
+        //public class InkCanvas : FrameworkElement, IInkCanvas
+
         private void button1_Click(object sender, EventArgs e)
         {
             Changerabbit(1);
@@ -247,6 +249,12 @@ namespace DensiJisyo
         private void Menu1_Load(object sender, EventArgs e)
         {
             Changerabbit(1);
+        }
+
+        private void contents1_Click(object sender, EventArgs e)
+        {
+           Form1.ctr1.Visible = false;
+           Form1.ctr2.Visible = true;
         }
     }
 }

@@ -51,8 +51,9 @@
             this.titleBox.Location = new System.Drawing.Point(12, 12);
             this.titleBox.Name = "titleBox";
             this.titleBox.ReadOnly = true;
-            this.titleBox.Size = new System.Drawing.Size(256, 24);
+            this.titleBox.Size = new System.Drawing.Size(985, 24);
             this.titleBox.TabIndex = 0;
+            this.titleBox.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -145,6 +146,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(658, 34);
             this.textBox1.TabIndex = 8;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // kobetu
             // 
