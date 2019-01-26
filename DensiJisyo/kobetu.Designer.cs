@@ -37,6 +37,7 @@
             this.dai3index = new System.Windows.Forms.TextBox();
             this.dai4index = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,7 +52,7 @@
             this.titleBox.Location = new System.Drawing.Point(12, 12);
             this.titleBox.Name = "titleBox";
             this.titleBox.ReadOnly = true;
-            this.titleBox.Size = new System.Drawing.Size(985, 24);
+            this.titleBox.Size = new System.Drawing.Size(839, 24);
             this.titleBox.TabIndex = 0;
             this.titleBox.TabStop = false;
             // 
@@ -148,10 +149,22 @@
             this.textBox1.TabIndex = 8;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button1.Location = new System.Drawing.Point(857, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 33);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "戻る";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // kobetu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dai4index);
             this.Controls.Add(this.dai3index);
@@ -163,6 +176,7 @@
             this.Controls.Add(this.titleBox);
             this.Name = "kobetu";
             this.Size = new System.Drawing.Size(1024, 600);
+            this.Load += new System.EventHandler(this.kobetu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -182,5 +196,6 @@
         private System.Windows.Forms.TextBox dai3index;
         private System.Windows.Forms.TextBox dai4index;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

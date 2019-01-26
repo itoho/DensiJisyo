@@ -15,15 +15,17 @@ namespace DensiJisyo
     {
         public static Menu1 ctr1;
         public static kobetu ctr2;
+        
         public Form1()
         {
             InitializeComponent();
             ctr1 = new Menu1();
+            
             ctr2 = new kobetu();
             panel1.Controls.Add(ctr1);
             panel1.Controls.Add(ctr2);
             ctr1.Visible = true;
-            //ctr2.Visible = false;
+            ctr2.Visible = false;
         }
 
         int menunum = 1;

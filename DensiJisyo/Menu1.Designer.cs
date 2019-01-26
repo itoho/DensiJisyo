@@ -193,6 +193,7 @@
             this.contents2.Size = new System.Drawing.Size(200, 200);
             this.contents2.TabIndex = 17;
             this.contents2.UseVisualStyleBackColor = false;
+            this.contents2.Click += new System.EventHandler(this.contents2_Click);
             // 
             // contents3
             // 
@@ -204,6 +205,7 @@
             this.contents3.Size = new System.Drawing.Size(200, 200);
             this.contents3.TabIndex = 18;
             this.contents3.UseVisualStyleBackColor = false;
+            this.contents3.Click += new System.EventHandler(this.contents3_Click);
             // 
             // contents4
             // 
@@ -215,6 +217,7 @@
             this.contents4.Size = new System.Drawing.Size(200, 200);
             this.contents4.TabIndex = 19;
             this.contents4.UseVisualStyleBackColor = false;
+            this.contents4.Click += new System.EventHandler(this.contents4_Click);
             // 
             // contents5
             // 
@@ -226,6 +229,7 @@
             this.contents5.Size = new System.Drawing.Size(200, 200);
             this.contents5.TabIndex = 20;
             this.contents5.UseVisualStyleBackColor = false;
+            this.contents5.Click += new System.EventHandler(this.contents5_Click);
             // 
             // contents6
             // 
@@ -237,6 +241,7 @@
             this.contents6.Size = new System.Drawing.Size(200, 200);
             this.contents6.TabIndex = 21;
             this.contents6.UseVisualStyleBackColor = false;
+            this.contents6.Click += new System.EventHandler(this.contents6_Click);
             // 
             // contents7
             // 
@@ -248,6 +253,7 @@
             this.contents7.Size = new System.Drawing.Size(200, 200);
             this.contents7.TabIndex = 22;
             this.contents7.UseVisualStyleBackColor = false;
+            this.contents7.Click += new System.EventHandler(this.contents7_Click);
             // 
             // contents8
             // 
@@ -259,6 +265,7 @@
             this.contents8.Size = new System.Drawing.Size(200, 200);
             this.contents8.TabIndex = 23;
             this.contents8.UseVisualStyleBackColor = false;
+            this.contents8.Click += new System.EventHandler(this.contents8_Click);
             // 
             // contents1_text
             // 

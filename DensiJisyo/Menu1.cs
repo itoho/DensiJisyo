@@ -12,7 +12,9 @@ namespace DensiJisyo
 {
     public partial class Menu1 : UserControl
     {
+        
         int menunum;
+        int pagenum;
         public Menu1()
         {
             InitializeComponent();
@@ -24,8 +26,21 @@ namespace DensiJisyo
         {
 
         }
+       
+        public int Getrabbit()
+        {
+            return menunum;
+            
+        }
+        public int Getpagerabbit()
+        {
+            return pagenum;
+        }
+
+        
         public void Changerabbit(int num)
         {
+            menunum = num;
             Console.WriteLine("rabbit" + num);
             button1.BackColor = Color.FromKnownColor(KnownColor.ActiveCaptionText);
             button2.BackColor = Color.FromKnownColor(KnownColor.ActiveCaptionText);
@@ -253,8 +268,58 @@ namespace DensiJisyo
 
         private void contents1_Click(object sender, EventArgs e)
         {
+           pagenum = 1;
            Form1.ctr1.Visible = false;
            Form1.ctr2.Visible = true;
+        }
+
+        private void contents2_Click(object sender, EventArgs e)
+        {
+            pagenum = 2;
+            Form1.ctr1.Visible = false;
+            Form1.ctr2.Visible = true;
+        }
+
+        private void contents3_Click(object sender, EventArgs e)
+        {
+            pagenum = 3;
+            Form1.ctr1.Visible = false;
+            Form1.ctr2.Visible = true;
+        }
+
+        private void contents4_Click(object sender, EventArgs e)
+        {
+            pagenum = 4;
+            Form1.ctr1.Visible = false;
+            Form1.ctr2.Visible = true;
+        }
+
+        private void contents5_Click(object sender, EventArgs e)
+        {
+            pagenum = 5;
+            Form1.ctr1.Visible = false;
+            Form1.ctr2.Visible = true;
+        }
+
+        private void contents6_Click(object sender, EventArgs e)
+        {
+            pagenum = 6;
+            Form1.ctr1.Visible = false;
+            Form1.ctr2.Visible = true;
+        }
+
+        private void contents7_Click(object sender, EventArgs e)
+        {
+            pagenum = 7;
+            Form1.ctr1.Visible = false;
+            Form1.ctr2.Visible = true;
+        }
+
+        private void contents8_Click(object sender, EventArgs e)
+        {
+            pagenum = 8;
+            Form1.ctr1.Visible = false;
+            Form1.ctr2.Visible = true;
         }
     }
 }

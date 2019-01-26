@@ -38,12 +38,12 @@ namespace DensiJisyo
                             titleBox.Text = sql;   //sdr["title"].ToString();
                             var meeens = sdr["means"];
                             var titlee = sdr["title"];
-                            dai1index.Text = sdr["title"].ToString();
-                            dai2index.Text = sdr["means"].ToString();
+                            //dai1index.Text = sdr["title"].ToString();
+                            //dai2index.Text = sdr["means"].ToString();
                             //Console.Write("sdr[\"means\"]="+sdr["means"].ToString());
-                            Console.WriteLine(sdr["means"]);
-                            Console.WriteLine(sdr["means"]);
-                            Debug.WriteLine(sdr);
+                            //Console.WriteLine(sdr["means"]);
+                            //Console.WriteLine(sdr["means"]);
+                            //Debug.WriteLine(sdr);
                             dai3index.Text = sdr["id"].ToString();
 
                         }
@@ -63,6 +63,29 @@ namespace DensiJisyo
                    
                 }
             }
+
+        }
+
+        private void kobetu_Load(object sender, EventArgs e)
+        {
+            switch (Form1.ctr1.Getrabbit())
+            {
+                case 1:
+
+
+                    break;
+            }
+            pictureBox2.Image=Image.FromFile("images/bluerect.jpg");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            backtorabbithouse();
+        }
+        public void backtorabbithouse()
+        {
+            Form1.ctr1.Visible = true;
+            Form1.ctr2.Visible = false;
 
         }
     }
