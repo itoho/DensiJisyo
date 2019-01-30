@@ -15,6 +15,7 @@ namespace DensiJisyo
         
         int menunum;
         int pagenum;
+        
         public Menu1()
         {
             InitializeComponent();
@@ -29,12 +30,12 @@ namespace DensiJisyo
        
         public int Getrabbit()
         {
-            return menunum;
+            return menunum;//ページナンバー 8あとでかけるやつ
             
         }
         public int Getpagerabbit()
         {
-            return pagenum;
+            return pagenum;//ページ内
         }
 
         
@@ -111,13 +112,13 @@ namespace DensiJisyo
                     contents7_text.Text = "";
                     contents8.BackgroundImage = null;
                     contents8_text.Text = "";
-                    contents1.BackgroundImage = Image.FromFile("images/pdic.jpg");
+                    contents1.BackgroundImage = Image.FromFile("images/pdic_eiwa.jpg");
                     contents1_text.Text = "英和辞書";
                     break;
                 case 4:
                     button4.BackColor = Color.FromArgb(0x30, 0x30, 0xAF);
-                    contents1.BackgroundImage = null;
-                    contents1_text.Text = "";
+                    contents1.BackgroundImage = Image.FromFile("images/pdic_waei.jpg");
+                    contents1_text.Text = "英和辞書";
                     contents2.BackgroundImage = null;
                     contents2_text.Text = "";
                     contents3.BackgroundImage = null;
@@ -195,7 +196,7 @@ namespace DensiJisyo
                     contents1.BackgroundImage = null;
                     contents1_text.Text = "";
                     contents2.BackgroundImage = null;
-                    contents2_text.Text = "";
+                    contents2_text.Text = "リモコン";
                     contents3.BackgroundImage = null;
                     contents3_text.Text = "";
                     contents4.BackgroundImage = null;
@@ -220,6 +221,15 @@ namespace DensiJisyo
         }
 
         //public class InkCanvas : FrameworkElement, IInkCanvas
+        public void updaterabbit()//kobetunisenni 
+        {
+            if (Form1.ctr2.kobetu_reload() != 0)
+            {
+                Form1.ctr1.Visible = false;
+                Form1.ctr2.Visible = true;
+            }
+        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -266,60 +276,61 @@ namespace DensiJisyo
             Changerabbit(1);
         }
 
-        private void contents1_Click(object sender, EventArgs e)
+
+        private void contents1_Click(object sender, EventArgs e)//コンテンツがくりっくされたとき
         {
            pagenum = 1;
-           Form1.ctr1.Visible = false;
-           Form1.ctr2.Visible = true;
+         
+           updaterabbit();
         }
 
         private void contents2_Click(object sender, EventArgs e)
         {
             pagenum = 2;
-            Form1.ctr1.Visible = false;
-            Form1.ctr2.Visible = true;
+           
+            updaterabbit();
         }
 
         private void contents3_Click(object sender, EventArgs e)
         {
             pagenum = 3;
-            Form1.ctr1.Visible = false;
-            Form1.ctr2.Visible = true;
+            
+            updaterabbit();
         }
 
         private void contents4_Click(object sender, EventArgs e)
         {
             pagenum = 4;
-            Form1.ctr1.Visible = false;
-            Form1.ctr2.Visible = true;
+           
+            updaterabbit();
         }
 
         private void contents5_Click(object sender, EventArgs e)
         {
             pagenum = 5;
-            Form1.ctr1.Visible = false;
-            Form1.ctr2.Visible = true;
+            
+            updaterabbit();
         }
 
         private void contents6_Click(object sender, EventArgs e)
         {
             pagenum = 6;
-            Form1.ctr1.Visible = false;
-            Form1.ctr2.Visible = true;
+            
+            updaterabbit();
         }
 
         private void contents7_Click(object sender, EventArgs e)
         {
             pagenum = 7;
-            Form1.ctr1.Visible = false;
-            Form1.ctr2.Visible = true;
+            
+            updaterabbit();
         }
 
         private void contents8_Click(object sender, EventArgs e)
         {
             pagenum = 8;
-            Form1.ctr1.Visible = false;
-            Form1.ctr2.Visible = true;
+           
+            updaterabbit();
         }
     }
 }

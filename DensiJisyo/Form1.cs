@@ -15,6 +15,7 @@ namespace DensiJisyo
     {
         public static Menu1 ctr1;
         public static kobetu ctr2;
+        public static remotecontroll remocon;
         
         public Form1()
         {
@@ -22,10 +23,13 @@ namespace DensiJisyo
             ctr1 = new Menu1();
             
             ctr2 = new kobetu();
+            remocon = new remotecontroll();
             panel1.Controls.Add(ctr1);
             panel1.Controls.Add(ctr2);
+            panel1.Controls.Add(remocon);
             ctr1.Visible = true;
             ctr2.Visible = false;
+            remocon.Visible = false;
         }
 
         int menunum = 1;
